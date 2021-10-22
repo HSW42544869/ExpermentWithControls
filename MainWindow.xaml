@@ -17,8 +17,8 @@
             <RowDefinition Height=".5*"/>
         </Grid.RowDefinitions>
         <Label Content="Enter a number" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <TextBox x:Name="number_TextBox" HorizontalAlignment="Left" Margin="67,87,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <Label Content="#" Grid.Column="1" HorizontalAlignment="Left" Margin="44,134,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="numberTextBox" HorizontalAlignment="Left" Margin="10,49,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <TextBlock x:Name="number" Grid.Column="1" Margin="121,130,0,0" Text="#" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Height="34"/>
 
     </Grid>
 </Window>
