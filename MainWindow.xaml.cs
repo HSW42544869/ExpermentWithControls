@@ -27,7 +27,12 @@ namespace ExpermentWithControls
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            numberTextBlock.Text = numberTextBox.Text;
+        }
 
+        private void numberTextBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = !int.TryParse(e.Text, out int result);
         }
     }
 }
