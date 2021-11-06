@@ -34,5 +34,10 @@ namespace ExpermentWithControls
         {
             e.Handled = !int.TryParse(e.Text, out int result);
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
