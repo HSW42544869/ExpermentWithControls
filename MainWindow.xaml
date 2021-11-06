@@ -19,12 +19,28 @@
         <Label Content="Enter a number" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18"/>
         <TextBlock x:Name="numberTextBlock" Grid.Column="1" Margin="121,130,0,0" Text="#" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Height="34" PreviewTextInput="numberTextBox_PreviewTextInput"/>
         <TextBox x:Name="numberTextBox" HorizontalAlignment="Left" Margin="10,49,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
-        <RadioButton Content="1&#xD;&#xA;&#xD;&#xA;" Grid.Column="1" HorizontalAlignment="Left" Margin="0,52,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="1" Grid.Column="1" HorizontalAlignment="Left" Margin="0,52,0,0" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment"/>
         <RadioButton Content="2" Grid.Column="1" HorizontalAlignment="Left" Margin="31,52,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" RenderTransformOrigin="0.554,2.225"/>
         <RadioButton Content="3" Grid.Column="1" HorizontalAlignment="Left" Margin="62,52,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" RenderTransformOrigin="0.554,2.225"/>
         <RadioButton Content="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Checked="RadioButton_Checked" RenderTransformOrigin="0.554,2.225"/>
         <RadioButton Content="5" Grid.Column="1" HorizontalAlignment="Left" Margin="31,0,0,0" VerticalAlignment="Center" Checked="RadioButton_Checked" RenderTransformOrigin="0.554,2.225"/>
         <RadioButton Content="6" Grid.Column="1" HorizontalAlignment="Left" Margin="62,0,0,0" VerticalAlignment="Center" Checked="RadioButton_Checked" RenderTransformOrigin="0.554,2.225"/>
+        <ListBox x:Name="mylistBox" Grid.Row="1">
+            <ListBoxItem Content="1"/>
+            <ListBoxItem Content="2"/>
+            <ListBoxItem Content="3"/>
+            <ListBoxItem Content="4"/>
+            <ListBoxItem Content="5"/>
+        </ListBox>
+        <ComboBox x:Name="editablecomboBox" Grid.Column="1" Margin="5,10,0,0" Grid.Row="1" IsEditable="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment">
+            <ListBoxItem Content="1"/>
+            <ListBoxItem Content="2"/>
+            <ListBoxItem Content="3"/>
+            <ListBoxItem Content="4"/>
+            <ListBoxItem Content="5"/>
+        </ComboBox>
+        <ListBox x:Name="readOnLyComboBox" Grid.Column="1" Grid.Row="1" Height="21" Margin="270,10,0,0" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
 
     </Grid>
 </Window>
